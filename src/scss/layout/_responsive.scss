@@ -1,0 +1,145 @@
+/* This stylesheet is only used for responsive states */
+
+
+#mobileNavButtons{
+	display: none;
+}
+
+/* MINIMUM WIDTH OF 1199PX */
+@media only screen and (min-width: $screen-lg-min) {
+	/*
+	body{
+		background: red;
+	}
+	*/
+
+}
+
+/* MINIMUM WIDTH OF 992PX AND MAX WIDTH OF 1198PX */
+@media only screen and (max-width: $screen-lg-max) {
+	/*
+	body{
+		background: green;
+	}
+	*/
+	
+}
+
+/* MINIMUM WIDTH OF 768PX AND MAX WIDTH OF 991PX */
+@media only screen and (max-width: $screen-md-max) {
+	html{
+		font-size: 8px;
+	}
+	#mainNav{
+		display: none;
+	}
+	#mobileNavButtons{
+		display: flex;
+
+		a{
+			padding: 20px;
+			text-align: center;
+			&:hover{
+				color: $red;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.site-header{
+		.logoContainer{
+			.container{
+				padding-bottom:20px;
+				.row{
+					justify-content: center !important;
+				}
+			}
+		}	
+	}
+
+	.mast.home-mast .row {
+	    padding: 120px 0 50px;
+	}
+
+	header .menuContainer .menuSection .menuWrap{
+		justify-content: center;
+	}
+
+	.col-3{
+	    width: 100%;
+	    max-width: 100%;
+	    flex: 0 0 100%;
+	    text-align: center;
+	    margin: 10px 0;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+
+	.col-4{
+	    width: 100%;
+	    max-width: 100%;
+	    flex: 0 0 100%;
+	    text-align: center;
+	    margin: 10px 0;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+
+	#mobileNavButtons{
+		align-items:center;
+	}
+
+	.mast.innerPage .container-fluid{
+		position: relative;
+	    background-color: #242d3c;
+	    .container{
+	    	.row{
+	    		padding:25px 0 0 0;
+	    		.mast_content{
+	    			width: 100%;
+	    			max-width: 100%;
+	    			    flex: 0 0 100%;
+	    		}
+	    	}
+	    }
+	}
+
+	.col{
+		text-align: center;
+	}
+
+}
+
+/* MINIMUM WIDTH OF 576PX AND MAX WIDTH OF 767PX */
+@media only screen and (max-width: $screen-sm-max) {
+	/*
+	body{
+		background: purple;
+	}
+	*/
+	
+	.col-6{
+	    width: 100%;
+	    max-width: 100%;
+	    flex: 0 0 100%;
+	    text-align: center;
+	    margin: 10px 0;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+
+}
+
+/* MAX WIDTH OF 575PX */
+@media only screen and (max-width: $screen-xsm-max) {
+	/*
+	body{
+		background: orange;
+	}
+	*/
+
+	
+}

@@ -1,0 +1,74 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: $baseFont;
+    color: $darkBlue;
+}
+
+a{
+    color: $yellow;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $headingFont;
+}
+
+.largeHeading{
+    font-family: $headingFont;
+    font-size: 4.7rem !important;
+}
+
+h1,.h1 {
+    font-size: 3.3rem;
+    margin-bottom:2rem;
+    font-weight: 900;
+} 
+
+h2,.h2 {
+    font-size: 2.8rem;
+    margin-bottom:4rem;
+    font-weight: 900;
+}
+
+h3,.h3 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+h4,.h4 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+
+h5,.h5 {
+    font-size: 2.2rem;
+}
+
+h6,.h6 {
+    font-size: 2.1rem;
+}
+
+p {
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+    font-family: $baseFont;
+}
+
+
+.whiteText{
+    *{
+        color:#ffffff;
+        a{
+            color: $yellow
+        }
+    }
+}
+
+

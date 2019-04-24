@@ -1,0 +1,38 @@
+
+.btn{
+	border:1px solid $red;
+	color: #FFFFFF;
+	background: $red;
+	border-radius: 0px;
+	font-size:2rem;
+	padding: 5px 20px;
+
+	&:hover{
+		background:$yellow;
+		border:1px solid $yellow;
+	}
+
+	&.secondary{
+		border:1px solid $darkBlue;
+		color: #FFFFFF;
+		background: $darkBlue;
+		&:hover{
+			background:$yellow;
+			border:1px solid $yellow;
+		}
+	}
+
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+	border:1px solid #ffffff;
+	color: #FFFFFF;
+	background: transparent;
+}
+
+.largeBtn{
+	font-size: 3.3rem;
+	font-family: $headingFont;
+	font-weight: 900;
+	padding:10px 50px;
+}

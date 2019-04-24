@@ -1,0 +1,36 @@
+
+
+footer{
+	background: $darkBlue;
+
+	.row{
+		padding:30px 0;
+		*{
+			color: #ffffff;
+		}
+
+		.phoneNumberText{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding-top: 25px;
+			span{
+				font-size: 2.2rem;
+			}
+		}
+
+		.locatedText {
+			p{
+				font-size: 1.6rem;
+			}
+		}
+
+		.socialIcons{
+			display: flex;
+			justify-content: flex-start;
+			a{
+				margin-right: 20px;
+			}
+		}
+	}
+}
