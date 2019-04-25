@@ -23,11 +23,6 @@
                             <span>221 W. Passaic St.</span>
                             <span>Rochelle Park, NJ 07662</span>
                         </div>
-                        <div>
-                            <h3>Franklin Lakes</h3>
-                            <span>794 Franklin Ave. Suite 203</span>
-                            <span>Franklin Lakes, NJ 07417</span>
-                        </div>
                     </div>
 
                 </div>
