@@ -94,7 +94,7 @@ add_shortcode('latest_news','latest_news');
 
 
 
-function wraptastic_testimonial_slider($atts) {
+function all_points_acupuncture_testimonial_slider($atts) {
     extract( shortcode_atts( array(
         'class' => '',
         'category' => ''
@@ -144,7 +144,63 @@ function wraptastic_testimonial_slider($atts) {
     
     return $return;
 }
-add_shortcode('wraptastic_testimonial_slider','wraptastic_testimonial_slider');
+add_shortcode('all_points_acupuncture_testimonial_slider','all_points_acupuncture_testimonial_slider');
+
+
+
+
+
+function all_points_acupuncture_testimonial_list($atts) {
+    extract( shortcode_atts( array(
+        'class' => '',
+        'category' => ''
+      ), $atts ) );
+
+    // WP_Query arguments
+    if($category != '') {
+        $args = array(
+            'post_type'   => 'testimonials',
+            'post_status' => 'published',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'testimonial_category',
+                    'field'    => 'slug',
+                    'terms'    => $category,
+                ),
+            )
+        );
+    }
+    else {
+        $args = array(
+            'post_type'   => 'testimonials',
+            'post_status' => 'published',
+        );
+    }
+
+
+    // The Query
+    $query = new WP_Query( $args );
+
+    $content = do_shortcode( shortcode_unautop( $content ) );
+    $content = stripParagraphs($content);
+
+    $return = '';
+
+    $return .= '<div id="testimonials testimonial-list">';
+        foreach( $query->posts as $post ) {
+            $return .= '<div class="testimonialItem">';
+                $excerpt = str_replace('"', '', $post->post_content);
+                $return .= '<div>';
+                    $return .= '<p><strong>'.get_the_title($post->ID).'</strong></p>';
+                    $return .= '<p>'.do_shortcode($excerpt).'</p>';
+                $return .= '</div>';
+            $return .= '</div>';
+        }
+    $return .= '</div>';
+    
+    return $return;
+}
+add_shortcode('all_points_acupuncture_testimonial_list','all_points_acupuncture_testimonial_list');
 
 
 

@@ -16,8 +16,20 @@ iframe{
 	max-width:100%;
 }
 
-.redBg{
-	background:$red;
+.padding0{
+	padding: 0px !important;
+}
+
+.greyBg{
+	background:$grey;
+}
+
+.offWhiteBg{
+	background:#f7f7f7;
+}
+
+.blueBg{
+	background:$blue;
 	div.wpcf7{
 		.wpcf7-form{
 			padding:20px;
@@ -55,52 +67,17 @@ iframe{
 
 
 
-.paintSplater{
-	background-image:url('assets/images/pages/paintSplater.png');
-	background-position:right center;
-	background-repeat:no-repeat;
-}
 
 
-.servicesSection{
-	.serviceItem{
-		background-color:$yellow;
-		border:10px solid #ffffff;
-		padding:30px 20px;
-		text-align: center;
-		background-image:url('assets/images/pages/paintSplaterYellow.png');
-		background-position:top center;
-		background-repeat:no-repeat;
-		height: 100%;
-		box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
-	}
-}
-
-
-
-.viewGalleryCol{
-	background-size:cover;
-	background-position:center;
-    .col{
-        text-align: center;
-        padding:139px 0;
-    }
-}
 
 
 #quotePop{
 	.modal-content{
-		background-color:$yellow;
+		background-color:#ffffff;
 		padding:10px;
 	}
 }
 
-.bottomImages{
-	img{
-		width: 100%;
-		height: auto;
-	}
-}
 
 div.wpcf7{
 	padding:20px 10px;
@@ -109,6 +86,7 @@ div.wpcf7{
 			margin-bottom: 20px;
 			select, input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="search"], textarea{
 				padding:10px  !important;
+				background:#f7f7f7;
 			}
 
 			p{
@@ -118,14 +96,15 @@ div.wpcf7{
 			}
 
 			textarea{
-				height: 100px
+				height: 100px;
+				background:#f7f7f7;
 			}
 
 		}
 	}
 
 	.wpcf7-submit{
-		background:#242d3c;
+		background:$green;
 		color: #ffffff;
 		text-transform: uppercase;
 		font-family: $headingFont;
@@ -135,63 +114,124 @@ div.wpcf7{
 
 
 
-.bookYourWrapContainer{
-	h3{
-		margin-bottom: 35px;
-	}
-}
-.bookYourWrapContainer2{
-	h3{
-		margin-bottom: 10px;
-	}
-}
 
-
-
-.yellowBlock{
-	background:$yellow;
-	text-align: center;
-	padding:20px;
-	height: 100%;
-
-	h3{
-		font-size: 3.3rem;
-		margin-bottom: 20px;
-	}
-	p{
-		font-size: 1.8rem;
-	}
-}
-
-.darkBlueBlock{
-	background:$darkBlue;
-	padding:35px;
-	height: 100%;
-
-	h2{
-		margin-bottom: 40px;
-	}
-
-	*{
-		color: #ffffff;
-	}
-
-}
-
-
-
-
-
-
-
-
-.smallGallery{
-	.gallery-thumb{
-		margin:0;
-		width: 250px !important;
-	    flex: 0 0 100%;
-		img{
-			display: block;
+.borderSection{
+	> div{
+		border-left:1px solid #ffffff;
+		&:first-child{
+			border-left:none;
 		}
+	}
+}
+
+
+.leafCol{
+	margin-top: -125px;
+}
+
+
+
+.meetOurAcupuncturist{
+	h2{
+		font-size: 4rem;
+	}
+}
+
+
+
+
+
+
+.whiteBgShadow{
+	background:#ffffff;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+	position:relative;
+	height: 100%;
+	> div{
+		padding:40px;
+	}
+	iframe{
+		display: block;
+	}
+
+	&.comingSoon{
+		&:before{
+			content:'Coming Soon';
+			background:#ed1c24;
+			color: #ffffff;
+			padding:10px 20px;
+			position:absolute;
+			top: -30px;
+			left: 0px;
+			font-size: 2.2rem;
+			font-weight: 900;
+		}
+	}
+}
+
+
+
+
+
+.leanHowCol{
+	> p{
+		font-size: 2.2rem;
+	}
+	div{
+
+		div{
+			margin: 0 25px;
+			p{
+
+			}
+		}
+	}
+}
+
+
+
+
+
+.testimonialItem{
+	position:relative;
+	margin-bottom: 50px;
+}
+
+
+
+
+.contactFormContainer{
+	background:#ffffff;
+	padding:20px;
+	width: 50%;
+	margin:0 auto;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+	margin-bottom: 50px !important;
+}
+
+
+
+
+
+.learnHowContainer,
+.locationsContainer,
+.achieveHarmonyContainer{
+	margin-bottom: 50px;
+}
+
+
+
+.borderSection2{
+	border:1px solid $grey;
+	.row{
+		padding:4rem 2rem;
+	}
+}
+
+
+
+.healthConcerns{
+	p{
+		line-height: 40px;
 	}
 }

@@ -18,7 +18,7 @@ while ( have_posts() ) : the_post();
             	echo '<div class="container-fluid ">';
 	                echo '<div class="container ">';
                 		echo '<div class="row">';
-                			echo '<div class="col col-6 mast_content">';
+                			echo '<div class="col col-5 mast_content">';
 			                    echo $mast_title;
                                 if( !empty($mast_description) ) {
                                     echo do_shortcode(wpautop( $mast_description ));

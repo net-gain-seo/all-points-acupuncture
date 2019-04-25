@@ -40,7 +40,7 @@
 			padding: 20px;
 			text-align: center;
 			&:hover{
-				color: $red;
+				color: $blue;
 				text-decoration: none;
 			}
 		}
@@ -93,7 +93,7 @@
 
 	.mast.innerPage .container-fluid{
 		position: relative;
-	    background-color: #242d3c;
+	    background-color: $blue;
 	    .container{
 	    	.row{
 	    		padding:25px 0 0 0;
@@ -101,6 +101,7 @@
 	    			width: 100%;
 	    			max-width: 100%;
 	    			    flex: 0 0 100%;
+	    			    padding-bottom:20px; 
 	    		}
 	    	}
 	    }
@@ -108,6 +109,10 @@
 
 	.col{
 		text-align: center;
+	}
+
+	.borderSection>div{
+		border-left:none;
 	}
 
 }
@@ -130,6 +135,22 @@
 	    	margin-bottom: 0;
 	    }
 	}
+
+	header .phoneSection{
+		justify-content: center;
+		.servingStatment{
+			text-align: center;
+			margin-top: 50px;
+		}
+		.phoneNumbers{
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+
+
+	
 
 }
 

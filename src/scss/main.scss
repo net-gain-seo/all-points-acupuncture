@@ -2,10 +2,12 @@
 
 
 /* Site Colours */
-$red: #b90014;
-$yellow: #ffc907;
-$darkBlue: #242d3c;
-$offWhite: #f7f7f7;
+$blue: #4686c2;
+$green: #69be67;
+$grey: #404041;
+
+$lightBlue: #0099c4;
+$darkBlue: #3a7c9d;
 
 /* Site Font Styles */
 $baseFont: 'Lato', sans-serif;
@@ -13,7 +15,7 @@ $headingFont: 'Roboto Condensed', sans-serif;
 
 
 /* RESPONSIVE STATES */
-$screen-lg-min: 1199px;
+$screen-lg-min: 1199px; 
 $screen-lg-max: ($screen-lg-min - 1);
 $screen-md-min: 992px;
 $screen-md-max: ($screen-md-min - 1);

@@ -22,13 +22,13 @@
         <div class="container">
            <div class="row">
               <div>
-                <a id="logo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/the-wraptastic-logo.png" /></a>
+                <a id="logo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/all-points-acupuncture-logo.png" /></a>
               </div>
 
               <div class="phoneSection">
-                <span class="servingStatment">Serving Simcoe County and the GTA for Over 20 Years</span>
+                <span class="servingStatment">Effective and Safe Acupuncture Treatments in<br/>Bergen County, New Jersey</span>
                 <span class="phoneNumbers">
-                  GTA <a href="tel:14164075489" class="mr-3">416-407-5489</a> Barrie <a href="tel:17054151919">705-415-1919</a>
+                  Call <a href="tel:2018433633" >(201) 843-3633</a>
                 </span>
               </div>
 
@@ -41,10 +41,9 @@
           <div class="container">
              <div class="row"> 
               <div class="menuWrap">
-                <a id="stickyLogo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/the-wraptastic-logo-small.png" /></a>
+                <a id="stickyLogo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/all-points-acupuncture-sticky-logo.png" /></a>
 
                 <nav id="mainNav">
-                  <span id="stickyPhoneNumbers">GTA 416-407-5489 &nbsp; &nbsp; Barrie 705-415-1919</span>
                   <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => '' ) ); ?>
                 </nav>
 
@@ -79,8 +78,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <span class="h1" style="display:block; margin-bottom: 0px; margin-left: 10px;">Wrap Me Up!</span>
-        <?php echo do_shortcode('[contact-form-7 id="402" title="Contact form 1"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="150" title="Contact form 1"]'); ?>
       </div>
     </div>
   </div>

@@ -5,15 +5,20 @@ html{
 body{
     font-size: 1.6rem;
     font-family: $baseFont;
-    color: $darkBlue;
+    color: $grey;
 }
 
 a{
-    color: $yellow;
+    color: $green;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3,
+.h1, .h2, .h3 {
+    font-family: $headingFont;
+}
+
+h4, h5, h6,
+.h4, .h5, .h6 {
     font-family: $headingFont;
 }
 
@@ -29,7 +34,7 @@ h1,.h1 {
 } 
 
 h2,.h2 {
-    font-size: 2.8rem;
+    font-size: 3.3rem;
     margin-bottom:4rem;
     font-weight: 900;
 }
@@ -49,6 +54,8 @@ h4,.h4 {
 
 h5,.h5 {
     font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 3rem;
 }
 
 h6,.h6 {
@@ -61,12 +68,18 @@ p {
     font-family: $baseFont;
 }
 
+ol,ul{
+    padding-left: 20px;
+    li{
+        font-size: 2rem;
+    }
+}
 
 .whiteText{
     *{
         color:#ffffff;
         a{
-            color: $yellow
+            color: $green
         }
     }
 }

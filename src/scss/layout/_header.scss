@@ -17,8 +17,9 @@ header{
 					position:relative;
 					justify-content: space-between;
 					#stickyLogo{
-						display: block;
+						display: flex;
     					align-self: center;
+    					margin-top:25px;
 					}
 					#stickyPhoneNumbers{
 					    display: flex;
@@ -46,11 +47,17 @@ header{
 	}
 
 	.logoContainer{
+		padding:20px 0;
 		.container{
 			.row{
 				padding:0px 0;
 				justify-content:space-between;
 			}
+		}
+		#logo{
+		    display: flex;
+		    align-items: center;
+		    height: 100%;
 		}
 	}
 
@@ -62,23 +69,24 @@ header{
 		justify-content: space-between;
 
 		.servingStatment{
-			color: $red;
-			font-size: 2.2rem;
+			color: $grey;
+			font-size: 1.8rem;
 			font-family: $baseFont;
-			font-weight: 900;
 		    font-style: italic;
 		    margin-bottom: 20px;
+		    text-align: right;
 		}
 
 		.phoneNumbers{
-			color: $darkBlue;
+			color: $grey;
 			font-size:2.8rem;
-			font-weight: 900; 
+			font-family: $headingFont;
+			font-weight: 900;
 			a{
-				color: $darkBlue;
+				color: $grey;
 				&:hover{
 					text-decoration: none;
-					color: $red;
+					color: $green;
 				}
 			}
 		}
@@ -88,7 +96,7 @@ header{
 		width: 100%;
 
 		.menuSection{
-			background: $darkBlue;
+			background: #f7f7f7;
 			.menuWrap{
 				display: flex;
 				width: 100%;
@@ -118,30 +126,31 @@ header{
 						position: relative;
 						&.current-menu-item{
 							a{
-								color: $yellow;
+								color: $green;
 							}
 						}
 						> a{
-							color: #ffffff;
-							font-size: 2.2rem;
+							color: $grey;
+							font-size: 2rem;
 							padding: 20px;
 							display: block;
 
 							&:hover{
 								text-decoration: none;
-								color: $yellow;
+								color: $green;
 							}
 
 						}
 
-						&.redBtn{
+						&.greenBtn{
 							a{
-								background:$red;
+								background:$green;
 								color: #ffffff;
 								font-weight:900;
 								transition: background-color 200ms linear;
+								padding:20px 40px;
 								&:hover{
-									background-color:$yellow;
+									background-color:$blue;
 
 								}
 							}
@@ -242,12 +251,7 @@ header{
 
 			}
 
-			&.redBtn{
-				a{
-					background:$red;
-					color: #ffffff;
-				}
-			}
+			
 
 
 			> .sub-menu{
@@ -275,18 +279,22 @@ header{
 	&.home-mast{
 		background-size: cover;
 		.row{
-			padding:200px 0 130px;
+			padding:350px 0 50px;
 			.mast_copy{
 				text-align: center;
-				width: 100%;
+				margin:0 auto;
 
 				*{
 					color: #ffffff;
 				}
 
 				h1{
-					font-size: 6.5rem;
-					margin-bottom: 30px;
+					font-size: 4.7rem;
+					margin-bottom: 20px;
+				}
+
+				h2{
+					font-size: 4.0rem
 				}
 
 				p{
@@ -327,11 +335,12 @@ header{
 		    			}
 
 		    			h1{
-		    				font-size: 4.7rem;
-		    				margin-bottom: 0px;
+		    				font-size: 3.3rem;
+		    				margin-bottom: 20px;
 		    			}
 		    			p{
-		    				font-size: 2.8rem;
+		    				font-size: 2.2rem;
+		    				font-style:italic;
 		    			}
 		    		}
 		    	}

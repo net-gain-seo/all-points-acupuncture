@@ -1,24 +1,24 @@
 
 .btn{
-	border:1px solid $red;
-	color: #FFFFFF;
-	background: $red;
+	border:1px solid $green;
+	color: #FFFFFF !important;
+	background: $green;
 	border-radius: 0px;
 	font-size:2rem;
 	padding: 5px 20px;
-
+    width: max-content;
 	&:hover{
-		background:$yellow;
-		border:1px solid $yellow;
+		background:$blue;
+		border:1px solid $blue;
 	}
 
 	&.secondary{
-		border:1px solid $darkBlue;
+		border:1px solid $blue;
 		color: #FFFFFF;
-		background: $darkBlue;
+		background: $blue;
 		&:hover{
-			background:$yellow;
-			border:1px solid $yellow;
+			background:$green;
+			border:1px solid $green;
 		}
 	}
 
