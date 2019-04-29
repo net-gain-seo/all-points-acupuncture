@@ -52,7 +52,7 @@
                     <i class="fa fa-bars"></i>
                     <span>MENU</span>
                   </a>
-                  <a href="tel:17054151919" class="nav-phone">
+                  <a href="tel:2018433633" class="nav-phone">
                     <i class="fa fa-phone"></i>
                     <span>CALL</span>
                   </a>
