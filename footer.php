@@ -7,8 +7,8 @@
                 <div class="col col-6"> 
                     <h3>We Would Love to Have You Visit Soon!</h3>
                     <div class="socialIcons">
-                        <a href="#" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/facebook.png" /></a>
-                        <a href="#" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/instagram.png" /></a>
+                        <a href="https://www.facebook.com/All-Points-Acupuncture-Wellness-Center-1854955441431282/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/facebook.png" /></a>
+                        <a href="https://www.instagram.com/allpointsacu/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/instagram.png" /></a>
                     </div>
                 </div>
                 <div class="col col-6">
