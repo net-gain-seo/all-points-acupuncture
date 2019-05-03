@@ -149,7 +149,27 @@
 	}
 
 
+	.slider-content{
+		.inner-content{
+			h1{
+				font-size: 2.7rem;
+				margin-bottom: 10px;
+			}
 
+			h2{
+				font-size: 2.0rem
+			}
+
+			p{
+				font-size: 1.8rem;
+				margin-bottom: 10px;
+
+				&:last-child{
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
 	
 
 }

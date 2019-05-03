@@ -275,6 +275,34 @@ header{
 
 /*** PAST ****/
 
+.slider-content{
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	.inner-content{
+		top: initial;
+		display: flex;
+		flex-direction: column;
+		h1{
+			font-size: 4.7rem;
+			margin-bottom: 20px;
+		}
+
+		h2{
+			font-size: 4.0rem
+		}
+
+		p{
+			font-size: 3.3rem;
+			margin-bottom: 30px;
+
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+
 .mast{
 	&.home-mast{
 		background-size: cover;

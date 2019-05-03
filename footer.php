@@ -10,6 +10,9 @@
                         <a href="https://www.facebook.com/All-Points-Acupuncture-Wellness-Center-1854955441431282/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/facebook.png" /></a>
                         <a href="https://www.instagram.com/allpointsacu/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/instagram.png" /></a>
                     </div>
+                    <div style="margin-top: 10px; font-style: 14px;">
+                        <p>Servicing Rochelle Park, Paramus, Maywood, Hackensack, Saddle Brook</p>
+                    </div>
                 </div>
                 <div class="col col-6">
                     <div class="phoneNumberText text-right">
