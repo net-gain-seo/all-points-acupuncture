@@ -6,7 +6,15 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
     <?php wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141216465-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-141216465-1');
+    </script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -78,7 +86,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <?php echo do_shortcode('[contact-form-7 id="150" title="Contact form 1"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="191" title="Contact Us Page Form"]'); ?>
       </div>
     </div>
   </div>
