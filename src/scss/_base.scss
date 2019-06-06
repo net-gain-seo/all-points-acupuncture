@@ -12,6 +12,11 @@ img{
 	height: auto;
 }
 
+img.aligncenter {
+	margin: 0 auto;
+	display: block;
+}
+
 iframe{
 	max-width:100%;
 }
@@ -173,18 +178,12 @@ div.wpcf7{
 
 
 
-.leanHowCol{
-	> p{
+.learnHowContainer {
+	p{
 		font-size: 2.2rem;
 	}
-	div{
-
-		div{
-			margin: 0 25px;
-			p{
-
-			}
-		}
+	.col-4{
+		margin-top: 4rem;
 	}
 }
 
@@ -203,7 +202,7 @@ div.wpcf7{
 .contactFormContainer{
 	background:#ffffff;
 	padding:20px;
-	width: 50%;
+	max-width: 570px;
 	margin:0 auto;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 	margin-bottom: 50px !important;
@@ -231,7 +230,17 @@ div.wpcf7{
 
 
 .healthConcerns{
-	p{
-		line-height: 40px;
+	ul {
+		padding: 0;
+	    display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	    height: 600px;
+		li {
+			margin-bottom: 20px;
+			line-height: 1;
+			list-style: none;
+			padding: 0 10px;
+		}
 	}
 }

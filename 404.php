@@ -3,16 +3,10 @@
 ?>
 
 <?php
-while ( have_posts() ) : the_post();
-    //if(has_post_thumbnail()) {
-    	//$imageUrl = get_the_post_thumbnail_url();
-
         echo '<div class="mast innerPage">';
             
-            $mast_title       = get_post_meta( get_the_ID(), 'mast_title', true );
-            $mast_description = get_post_meta( get_the_ID(), 'mast_description', true );
-
-            //echo '<img src="'.$imageUrl.'" />';
+            $mast_title       = "<h1>Page Not Found</h1>";
+            $mast_description = "";
 
             if( !empty($mast_title) ) {
             	echo '<div class="container-fluid ">';
@@ -32,9 +26,14 @@ while ( have_posts() ) : the_post();
     //}
  ?>
 
-<?php
+ <div class="container">
+    <div class="row">
+        <div class="col col-12 col-lg-9">
+            <p>Oops, we’re sorry. We can’t find the page you’re looking for. </p>
+            <p>The link you followed may be broken or the page may have been removed.</p>
+            <p>Back to <a href="https://allpointsawc.com/">homepage</a></p>
+        </div>
+    </div>
+</div>
 
-    the_content();
-endwhile;
-
-get_footer();
+<?php get_footer(); ?>

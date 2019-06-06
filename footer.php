@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="col col-6">
-                    <div class="phoneNumberText text-right">
+                    <div class="phoneNumberText">
                         <span>Call to schedule your appointment</span>
                         <span>(201) 843-3633</span>
                     </div>
@@ -32,11 +32,11 @@
             </div>
 
 
-            <div class="row pt-0">
+            <div class="row copyright">
                 <div class="col col-8">
                     Copyright © <?php echo date('Y'); ?>. All Points Acupuncture & Wellness Center. All rights reserved.
                 </div>
-                <div class="col col-4 text-right">
+                <div class="col col-4">
                     <a href="https://www.netgainseo.com" target="_blank" title="NetGain Website Design Barrie ON">NetGain Website Design Barrie ON</a>
                 </div>
             </div>

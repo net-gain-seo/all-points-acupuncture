@@ -1,7 +1,7 @@
 /* This stylesheet is only used for responsive states */
 
 
-#mobileNavButtons{
+#mobileNavButtons, .nav-phone{
 	display: none;
 }
 
@@ -9,20 +9,19 @@
 @media only screen and (min-width: $screen-lg-min) {
 	/*
 	body{
-		background: red;
+		background: green;
 	}
 	*/
-
 }
 
 /* MINIMUM WIDTH OF 992PX AND MAX WIDTH OF 1198PX */
 @media only screen and (max-width: $screen-lg-max) {
-	/*
-	body{
-		background: green;
+	header .menuContainer .row #mainNav .menu>li>a {
+		font-size: 1.6rem
 	}
-	*/
-	
+	.healthConcerns ul {
+		height: 760px;
+	}
 }
 
 /* MINIMUM WIDTH OF 768PX AND MAX WIDTH OF 991PX */
@@ -35,7 +34,6 @@
 	}
 	#mobileNavButtons{
 		display: flex;
-
 		a{
 			padding: 20px;
 			text-align: center;
@@ -46,15 +44,8 @@
 		}
 	}
 
-	.site-header{
-		.logoContainer{
-			.container{
-				padding-bottom:20px;
-				.row{
-					justify-content: center !important;
-				}
-			}
-		}	
+	.site-header .logoContainer .container .row{
+		justify-content: center !important;	
 	}
 
 	.mast.home-mast .row {
@@ -65,11 +56,21 @@
 		justify-content: center;
 	}
 
+	header .phoneSection{
+		.servingStatment{
+			text-align: center;
+			margin-top: 20px;
+		}
+		.phoneNumbers{
+			text-align: center;
+			width: 100%;
+		}
+	}
+
 	.col-3{
 	    width: 100%;
 	    max-width: 100%;
 	    flex: 0 0 100%;
-	    text-align: center;
 	    margin: 10px 0;
 	    &:last-child{
 	    	margin-bottom: 0;
@@ -80,7 +81,6 @@
 	    width: 100%;
 	    max-width: 100%;
 	    flex: 0 0 100%;
-	    text-align: center;
 	    margin: 10px 0;
 	    &:last-child{
 	    	margin-bottom: 0;
@@ -107,47 +107,33 @@
 	    }
 	}
 
-	.col{
-		text-align: center;
-	}
-
 	.borderSection>div{
 		border-left:none;
 	}
+	
+	.healthConcerns ul {
+		height: 760px;
+	}
 
+	footer .copyright .col, .copyright .col:last-child  {
+		width: 100%;
+	    max-width: 100%;
+	    flex: 0 0 100%;
+	    text-align: center !important;
+	}
 }
 
 /* MINIMUM WIDTH OF 576PX AND MAX WIDTH OF 767PX */
 @media only screen and (max-width: $screen-sm-max) {
-	/*
-	body{
-		background: purple;
-	}
-	*/
-	
 	.col-6{
 	    width: 100%;
 	    max-width: 100%;
 	    flex: 0 0 100%;
-	    text-align: center;
 	    margin: 10px 0;
 	    &:last-child{
 	    	margin-bottom: 0;
 	    }
 	}
-
-	header .phoneSection{
-		justify-content: center;
-		.servingStatment{
-			text-align: center;
-			margin-top: 50px;
-		}
-		.phoneNumbers{
-			text-align: center;
-			width: 100%;
-		}
-	}
-
 
 	.slider-content{
 		.inner-content{
@@ -170,17 +156,52 @@
 			}
 		}
 	}
-	
+	.healthConcerns ul {
+		height: 1120px;
+	}
+	footer {
+		.row {
+			.col {
+				text-align: center;
+				.socialIcons {
+					justify-content: center;
+					a {
+						margin: 0 10px;
+					}
+				}
+				.locationsSection>div {
+					margin: 0 auto;
+					text-align: center;
+				}
+				.phoneNumberText {
+					text-align: center;
+				}
+			}
+		}
+	}
 
 }
 
 /* MAX WIDTH OF 575PX */
 @media only screen and (max-width: $screen-xsm-max) {
-	/*
-	body{
-		background: orange;
+	.nav-phone{
+		display: block;
 	}
-	*/
-
-	
+	header .phoneSection{
+		.servingStatment{
+			margin-bottom: 0px;
+		}
+		.phoneNumbers{
+			display: none;
+		}
+	}
+	.healthConcerns ul {
+		height: 330px;
+		overflow: scroll;
+		li {
+			flex: 0 0 10%;
+			width: 45%;
+			margin-bottom: 14px;
+		}
+	}
 }
