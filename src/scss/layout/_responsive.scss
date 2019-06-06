@@ -1,7 +1,7 @@
 /* This stylesheet is only used for responsive states */
 
 
-#mobileNavButtons{
+#mobileNavButtons, .nav-phone{
 	display: none;
 }
 
@@ -31,7 +31,6 @@
 	}
 	#mobileNavButtons{
 		display: flex;
-
 		a{
 			padding: 20px;
 			text-align: center;
@@ -42,15 +41,8 @@
 		}
 	}
 
-	.site-header{
-		.logoContainer{
-			.container{
-				padding-bottom:20px;
-				.row{
-					justify-content: center !important;
-				}
-			}
-		}	
+	.site-header .logoContainer .container .row{
+		justify-content: center !important;	
 	}
 
 	.mast.home-mast .row {
@@ -59,6 +51,17 @@
 
 	header .menuContainer .menuSection .menuWrap{
 		justify-content: center;
+	}
+
+	header .phoneSection{
+		.servingStatment{
+			text-align: center;
+			margin-top: 20px;
+		}
+		.phoneNumbers{
+			text-align: center;
+			width: 100%;
+		}
 	}
 
 	.col-3{
@@ -132,19 +135,6 @@
 	    }
 	}
 
-	header .phoneSection{
-		justify-content: center;
-		.servingStatment{
-			text-align: center;
-			margin-top: 50px;
-		}
-		.phoneNumbers{
-			text-align: center;
-			width: 100%;
-		}
-	}
-
-
 	.slider-content{
 		.inner-content{
 			h1{
@@ -172,11 +162,15 @@
 
 /* MAX WIDTH OF 575PX */
 @media only screen and (max-width: $screen-xsm-max) {
-	/*
-	body{
-		background: orange;
+	.nav-phone{
+		display: block;
 	}
-	*/
-
-	
+	header .phoneSection{
+		.servingStatment{
+			margin-bottom: 0px;
+		}
+		.phoneNumbers{
+			display: none;
+		}
+	}
 }
