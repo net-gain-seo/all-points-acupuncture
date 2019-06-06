@@ -9,20 +9,16 @@
 @media only screen and (min-width: $screen-lg-min) {
 	/*
 	body{
-		background: red;
+		background: green;
 	}
 	*/
-
 }
 
 /* MINIMUM WIDTH OF 992PX AND MAX WIDTH OF 1198PX */
 @media only screen and (max-width: $screen-lg-max) {
-	/*
-	body{
-		background: green;
+	header .menuContainer .row #mainNav .menu>li>a {
+		font-size: 1.8rem
 	}
-	*/
-	
 }
 
 /* MINIMUM WIDTH OF 768PX AND MAX WIDTH OF 991PX */
@@ -108,7 +104,7 @@
 	}
 
 	.col{
-		text-align: center;
+		//text-align: center;
 	}
 
 	.borderSection>div{

@@ -4,15 +4,15 @@
 
 <?php
 while ( have_posts() ) : the_post();
-    if(has_post_thumbnail()) {
-    	$imageUrl = get_the_post_thumbnail_url();
+    //if(has_post_thumbnail()) {
+    	//$imageUrl = get_the_post_thumbnail_url();
 
         echo '<div class="mast innerPage">';
             
             $mast_title       = get_post_meta( get_the_ID(), 'mast_title', true );
             $mast_description = get_post_meta( get_the_ID(), 'mast_description', true );
 
-            echo '<img src="'.$imageUrl.'" />';
+            //echo '<img src="'.$imageUrl.'" />';
 
             if( !empty($mast_title) ) {
             	echo '<div class="container-fluid ">';
@@ -29,7 +29,7 @@ while ( have_posts() ) : the_post();
                 echo '</div>';
             }
         echo '</div>'; // End of page-mast container
-    }
+    //}
  ?>
 
 <?php
