@@ -114,16 +114,16 @@
 		border-left:none;
 	}
 
+	footer .copyright .col, .copyright .col:last-child  {
+		width: 100%;
+	    max-width: 100%;
+	    flex: 0 0 100%;
+	    text-align: center !important;
+	}
 }
 
 /* MINIMUM WIDTH OF 576PX AND MAX WIDTH OF 767PX */
 @media only screen and (max-width: $screen-sm-max) {
-	/*
-	body{
-		background: purple;
-	}
-	*/
-	
 	.col-6{
 	    width: 100%;
 	    max-width: 100%;
@@ -156,7 +156,23 @@
 			}
 		}
 	}
-	
+	footer {
+		.row {
+			.socialIcons {
+				justify-content: center;
+				a {
+					margin: 0 10px;
+				}
+			}
+			.locationsSection>div {
+				margin: 0 auto;
+				text-align: center;
+			}
+			.phoneNumberText {
+				text-align: center;
+			}
+		}
+	}
 
 }
 
