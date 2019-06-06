@@ -199,7 +199,9 @@
 		height: 330px;
 		overflow: scroll;
 		li {
+			flex: 0 0 10%;
 			width: 45%;
+			margin-bottom: 14px;
 		}
 	}
 }
