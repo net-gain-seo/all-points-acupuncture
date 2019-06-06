@@ -12,6 +12,11 @@ img{
 	height: auto;
 }
 
+img.aligncenter {
+	margin: 0 auto;
+	display: block;
+}
+
 iframe{
 	max-width:100%;
 }
@@ -225,7 +230,16 @@ div.wpcf7{
 
 
 .healthConcerns{
-	p{
-		line-height: 40px;
+	ul {
+		padding: 0;
+	    display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	    height: 600px;
+		li {
+			line-height: 40px;
+			list-style: none;
+			padding: 0 10px;
+		}
 	}
 }
