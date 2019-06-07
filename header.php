@@ -30,7 +30,7 @@
         <div class="container">
            <div class="row">
               <div>
-                <a id="logo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/all-points-acupuncture-logo.png" /></a>
+                <a id="logo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/all-points-acupuncture-logo.png" alt="All Points Acupuncture & Wellness Center Logo" /></a>
               </div>
 
               <div class="phoneSection">
@@ -49,7 +49,7 @@
           <div class="container">
              <div class="row"> 
               <div class="menuWrap">
-                <a id="stickyLogo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/all-points-acupuncture-sticky-logo.png" /></a>
+                <a id="stickyLogo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/all-points-acupuncture-sticky-logo.png" alt="All Points Acupuncture & Wellness Center Icon" /></a>
 
                 <nav id="mainNav">
                   <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => '' ) ); ?>
