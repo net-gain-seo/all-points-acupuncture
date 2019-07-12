@@ -19,7 +19,6 @@ header{
 					#stickyLogo{
 						display: flex;
     					align-self: center;
-    					margin-top:25px;
 					}
 					#stickyPhoneNumbers{
 					    display: flex;
@@ -29,15 +28,6 @@ header{
 					    top: 15px;
 					    font-size: 2.2rem;;
 					    z-index: 100
-					}
-
-					.menu{
-						li{
-							a{
-						        padding-top: 50px !important;
-							    padding-bottom: 17px !important;
-							}
-						}
 					}
 				}
 			}
@@ -218,42 +208,35 @@ header{
     }
 
     .mobileMenuToggle{
-    	margin-bottom: 10px;
     	display: block;
+    	float: right;
+	    padding: 5px;
+    	width: 35px;
+    	text-align: center;
+    	position: relative;
+    	top: -15px;
+    	right: -15px;
     }
 
-    #menu-menu-1{
+    .menu{
 		list-style: none;
 		padding-left:0px;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 0px;
 		justify-content: flex-end;
-
-
 		 li{
 			position: relative;
-			&.current-menu-item{
-				a{
-					color: #AA1E23;
-				}
-			}
 			> a{
-				font-size: 2.2rem;
-				padding: 5px 10px;
+				font-size: 2.5rem;
+				padding: 10px;
 				display: block;
-
-
+				color: #404041;
 				&:hover{
 					text-decoration: none;
-					color: #AA1E23;
 				}
 
 			}
-
-			
-
-
 			> .sub-menu{
 				list-style: none;
 				padding-left:10px;
@@ -263,7 +246,9 @@ header{
 					display: block;
 				}
 			}
-
+			&.quotePop {
+				display: none;
+			}
 		}
 	}
 }

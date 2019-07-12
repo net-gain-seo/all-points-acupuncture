@@ -24,6 +24,13 @@
 	}
 }
 
+/* MINIMUM WIDTH OF 992PX */
+@media only screen and (min-width: $screen-md-min) {
+	#mobileNav {
+		display: none;
+	}
+}
+
 /* MINIMUM WIDTH OF 768PX AND MAX WIDTH OF 991PX */
 @media only screen and (max-width: $screen-md-max) {
 	html{
@@ -47,7 +54,9 @@
 	.site-header .logoContainer .container .row{
 		justify-content: center !important;	
 	}
-
+	header.sticky .menuContainer .menuSection .menuWrap #stickyLogo {
+		margin-top: 0;
+	}
 	.mast.home-mast .row {
 	    padding: 120px 0 50px;
 	}
@@ -135,17 +144,14 @@
 	    }
 	}
 
+	.slider-wrap .slick-arrow {
+		display: none !important;
+	}
 	.slider-content{
 		.inner-content{
 			h1{
-				font-size: 2.7rem;
 				margin-bottom: 10px;
 			}
-
-			h2{
-				font-size: 2.0rem
-			}
-
 			p{
 				font-size: 1.8rem;
 				margin-bottom: 10px;
@@ -182,6 +188,15 @@
 
 }
 
+@media only screen and (max-width: 600px) {
+	.slider-wrap {
+		display: none;
+	}
+	.mobile-hero {
+		display: block;
+	}
+}
+
 /* MAX WIDTH OF 575PX */
 @media only screen and (max-width: $screen-xsm-max) {
 	.nav-phone{
@@ -195,6 +210,9 @@
 			display: none;
 		}
 	}
+	header .logoContainer .container .row {
+		padding: 0 10px;
+	}
 	.healthConcerns ul {
 		height: 330px;
 		overflow: scroll;
@@ -203,5 +221,17 @@
 			width: 45%;
 			margin-bottom: 14px;
 		}
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	#mobileNavButtons a {
+		font-size: 3rem;
+		span {
+			display: none;
+		}
+	}
+	#mobileNav {
+		width: 100%;
 	}
 }

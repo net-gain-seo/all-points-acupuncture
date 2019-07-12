@@ -20,7 +20,7 @@
 <body <?php body_class(); ?>>
 
   <nav id="mobileNav">
-    <a href="#" class="btn mobileMenuToggle">Close</a>
+    <a href="#" class="mobileMenuToggle"><i class="fa fa-close"></i></a>
     <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => '' ) ); ?>
   </nav>
 
