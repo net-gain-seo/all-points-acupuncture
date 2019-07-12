@@ -15,12 +15,56 @@
 
       gtag('config', 'UA-141216465-1');
     </script>
+
+    <script type="application/ld+json">
+      [{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "All Points Acupuncture & Wellness",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "221 W. Passaic St.",
+          "addressLocality": "Rochelle Park",
+          "addressRegion": "NJ",
+          "addressCountry": "US",
+          "postalCode": "07662"
+        },
+        "openingHours": [
+          "Mo 10:00-18:00",
+          "Tu 9:00-19:00",
+          "We 14:00-19:00",
+          "Th 9:00-19:00",
+          "Fr 11:00-19:00",
+          "Sa 9:00-14:00",
+          "Su Closed"
+        ],
+        "telephone": "201-843-3633",
+        "url": "https://allpointsawc.com",
+        "image" : "https://allpointsawc.com/wp-content/uploads/2019/04/first-visit.png"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://allpointsawc.com",
+        "sameAs" : [ 
+          "https://www.facebook.com/All-Points-Acupuncture-Wellness-Center-1854955441431282/",
+          "https://www.instagram.com/allpointsacu/"
+        ],
+        "logo" : "https://allpointsawc.com/wp-content/themes/all-points-acupuncture/assets/images/all-points-acupuncture-logo.png",
+        "contactPoint" : [{
+          "@type" : "ContactPoint",
+          "telephone" : "+1-201-843-3633",
+          "contactType" : "Customer Service"
+        
+        }]
+      }]
+    </script>
 </head>
 
 <body <?php body_class(); ?>>
 
   <nav id="mobileNav">
-    <a href="#" class="btn mobileMenuToggle">Close</a>
+    <a href="#" class="mobileMenuToggle"><i class="fa fa-close"></i></a>
     <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => '' ) ); ?>
   </nav>
 
