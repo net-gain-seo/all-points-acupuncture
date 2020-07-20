@@ -2,7 +2,7 @@
 
 
 <?php
-$blogPageId = 68;
+$blogPageId = 233;
 if(has_post_thumbnail($blogPageId)) {
 	$imageUrl = get_the_post_thumbnail_url($blogPageId);
 
@@ -30,121 +30,9 @@ if(has_post_thumbnail($blogPageId)) {
  ?>
 
 <!----- FEATURED BLOGS ------> 
-<?php 
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-// are we on page one?
-if(1 == $paged) {
-?>
 
-<div class="container-fluid" style="background-color:#E8E9EC;">
-	<div class="container" style="">
-		<div class="row">
-			<div class="col col-12 ">
-				<h2>FEATURED BLOGS</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="featuredBlogCards">
 
-				<?php 
-			 	// WP_Query arguments
-			    $args = array(
-			        'post_type'   => 'post',
-			        'post_status' => 'publish',
-			        'posts_per_page' => 5,
-			        'meta_query' => array(
-			            array(
-			                'key' 		=> 'is_featured',
-			                'value'    	=> '1',
-			                'compare'   => "=",
-			            ),
-			        )
-			    );
 
-			    // The Query
-			    $query = new WP_Query( $args );
-
-			    if(count($query->posts) > 0){
-			    	$count = 0;
-					while ( $query->have_posts() ) : $query->the_post(); 
-						$count ++;
-
-					
-
-						if($count == 1){
-							?>
-							<div class="blogCardStyle1">
-								<?php $imageUrl = get_the_post_thumbnail_url(get_the_ID(),'featuredBlogImage2'); ?>
-								<div style="background-image: url('<?php echo $imageUrl; ?>');background-size: cover;"></div>
-								<div class="blogCardPadding">
-									<span class="date"><?php echo get_the_date(); ?></span>
-									<h4><a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a></h4>
-									<p><?php echo substr(strip_tags(get_the_content()),0,100); ?></p>
-								</div>
-							</div>
-							<?php 
-						}elseif($count == 2){
-							?>
-							<div class="blogCardStyle2">
-								<?php $imageUrl = get_the_post_thumbnail_url(get_the_ID(),'featuredBlogImage'); ?>
-								<div class="blogCardPadding whiteText" style="background-image: url('<?php echo $imageUrl; ?>');background-size: cover;">
-									<span class="date"><?php echo get_the_date(); ?></span>
-									<h4><a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a></h4>
-									<p><?php echo substr(strip_tags(get_the_content()),0,100); ?></p>
-								</div>
-							</div>
-							<?php
-						}elseif($count === 3){
-							?>
-							<div class="blogCardStyle3">
-								<div class="blogCardPadding">
-									<span class="date"><?php echo get_the_date(); ?></span>
-									<h4><a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a></h4>
-									<p><?php echo substr(strip_tags(get_the_content()),0,100); ?></p>
-								</div>
-							</div>
-							<?php 
-						}elseif($count === 4){
-							?>
-							<div class="blogCardFlexCol blogCardStyle4">
-								<div>
-									<span class="date"><?php echo get_the_date(); ?></span>
-									<?php $imageUrl = get_the_post_thumbnail_url(get_the_ID(),'featuredBlogImage2'); ?>
-									<img src="<?php echo $imageUrl; ?>" alt="<?php echo get_the_title(); ?>"  />
-								</div>
-								<div class="blogCardPadding">
-									<h4><a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a></h4>
-								</div>
-							</div>
-							<?php 
-						}elseif($count === 5){
-							?>
-							<div>
-								<div class="blogCardStyle5 blogCardPadding whiteText blueBg">
-									<span class="date"><?php echo get_the_date(); ?></span>
-									<h4><a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a></h4>
-									<p><?php echo substr(strip_tags(get_the_content()),0,100); ?></p>
-								</div>
-							</div>
-							<?php 
-						}
-				        
-					endwhile; 
-	       			wp_reset_postdata(); // Reset loop data
-       			}
-				?>
-				
-				
-				
-				
-			</div>
-		</div>
-		
-	</div>
-</div>
-<?php 
-}
-?>
 
 
 <div class="container-fluid" style="background-color:#ffffff;">

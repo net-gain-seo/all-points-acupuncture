@@ -19,6 +19,7 @@ header{
 					#stickyLogo{
 						display: flex;
     					align-self: center;
+    					margin-top:25px;
 					}
 					#stickyPhoneNumbers{
 					    display: flex;
@@ -28,6 +29,15 @@ header{
 					    top: 15px;
 					    font-size: 2.2rem;;
 					    z-index: 100
+					}
+
+					.menu{
+						li{
+							a{
+						        padding-top: 50px !important;
+							    padding-bottom: 17px !important;
+							}
+						}
 					}
 				}
 			}
@@ -208,35 +218,42 @@ header{
     }
 
     .mobileMenuToggle{
+    	margin-bottom: 10px;
     	display: block;
-    	float: right;
-	    padding: 5px;
-    	width: 35px;
-    	text-align: center;
-    	position: relative;
-    	top: -15px;
-    	right: -15px;
     }
 
-    .menu{
+    #menu-menu-1{
 		list-style: none;
 		padding-left:0px;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 0px;
 		justify-content: flex-end;
+
+
 		 li{
 			position: relative;
+			&.current-menu-item{
+				a{
+					color: #AA1E23;
+				}
+			}
 			> a{
-				font-size: 2.5rem;
-				padding: 10px;
+				font-size: 2.2rem;
+				padding: 5px 10px;
 				display: block;
-				color: #404041;
+
+
 				&:hover{
 					text-decoration: none;
+					color: #AA1E23;
 				}
 
 			}
+
+			
+
+
 			> .sub-menu{
 				list-style: none;
 				padding-left:10px;
@@ -246,9 +263,7 @@ header{
 					display: block;
 				}
 			}
-			&.quotePop {
-				display: none;
-			}
+
 		}
 	}
 }
@@ -259,34 +274,6 @@ header{
 
 
 /*** PAST ****/
-
-.slider-content{
-	height: 100%;
-	display: flex;
-	align-items: flex-end;
-	.inner-content{
-		top: initial;
-		display: flex;
-		flex-direction: column;
-		h1{
-			font-size: 4.7rem;
-			margin-bottom: 20px;
-		}
-
-		h2{
-			font-size: 4.0rem
-		}
-
-		p{
-			font-size: 3.3rem;
-			margin-bottom: 30px;
-
-			&:last-child{
-				margin-bottom: 0px;
-			}
-		}
-	}
-}
 
 .mast{
 	&.home-mast{
@@ -325,9 +312,13 @@ header{
 
 	&.innerPage{
 		position:relative;
-		background: url('assets/images/pages/banner.png') center no-repeat;
-		background-size: cover;
 		.container-fluid{
+		    position: absolute;
+		    top: 0px;
+		    left: 0px;
+		    z-index: 1000;
+		    height: 100%;
+
 		    .container{
 		    	height: 100%;
 		    	.row{
